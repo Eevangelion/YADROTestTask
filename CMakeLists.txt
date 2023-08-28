@@ -14,7 +14,6 @@ add_executable(run_test ${TEST_SRC_LIST})
 
 target_link_libraries(run_test ${GTEST_BOTH_LIBRARIES})
 
-# Добавить тесты
 add_test(Test1 run_test tests/input/test1.txt tests/output/test1.txt)
 add_test(Test2 run_test tests/input/test2.txt tests/output/test2.txt)
 add_test(Test3 run_test tests/input/test3.txt tests/output/test3.txt)

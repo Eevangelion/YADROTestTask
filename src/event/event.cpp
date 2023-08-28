@@ -18,7 +18,7 @@ std::ostream& operator<<(std::ostream& out, const Event e) {
 std::istream& operator>>(std::istream& in, Event& e) {
     in >> e.time >> e.id >> e.clientName;
 
-    if (e.id == (char)2) {
+    if (e.id == 2) {
         in >> e.tableNumber;
     }
 
@@ -32,7 +32,7 @@ Event::Event(std::string time, short id) {
 
 Event::Event(std::string time, const char* errMsg) {
     this->time = time;
-    this->id = (char)13;
+    this->id = 13;
     this->errMsg = errMsg;
 }
 
